@@ -6,3 +6,7 @@ console.log("name: "+name1)
 console.log("first score: "+score1) 
 console.log("second score: "+score2) 
 console.log("sum of the scores: "+sum)
+
+var str = '1' 
+var str2:number = <number> <any> str   //str is now of type number 
+console.log(typeof(str2))
