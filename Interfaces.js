@@ -26,3 +26,8 @@ console.log(options.commandline[1]);
 options = { program: "test1", commandline: function () { return "**Hello World**"; } };
 var fn = options.commandline;
 console.log(fn());
+var drummer = {};
+drummer.age = 27;
+drummer.instrument = "Drums";
+console.log("Age:  " + drummer.age);
+console.log("Instrument:  " + drummer.instrument);
