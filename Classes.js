@@ -55,6 +55,14 @@ var StringPrinter = /** @class */ (function (_super) {
     };
     return StringPrinter;
 }(PrinterClass));
+var StaticMem = /** @class */ (function () {
+    function StaticMem() {
+    }
+    StaticMem.disp = function () {
+        console.log("The value of num is " + StaticMem.num);
+    };
+    return StaticMem;
+}());
 var carObj = new Car("XXSY1");
 console.log("Reading attribute value Engine as :  " + carObj.engine);
 carObj.disp();
@@ -62,3 +70,5 @@ var circleObj = new Circle(223);
 circleObj.disp();
 var stringPrinterObj = new StringPrinter();
 stringPrinterObj.doPrint();
+StaticMem.num = 12;
+StaticMem.disp();

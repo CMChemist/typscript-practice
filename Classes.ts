@@ -37,6 +37,13 @@ class Car {
     } 
  } 
  
+class StaticMem {  
+    static num:number; 
+
+    static disp():void { 
+        console.log("The value of num is "+ StaticMem.num) 
+    } 
+}   
  
 var carObj = new Car("XXSY1");
 
@@ -49,3 +56,6 @@ circleObj.disp()
 
 var stringPrinterObj = new StringPrinter() 
 stringPrinterObj.doPrint()
+
+StaticMem.num = 12 
+StaticMem.disp()
