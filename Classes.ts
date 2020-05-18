@@ -10,3 +10,9 @@ class Car {
        console.log("Engine is  :   "+this.engine) 
     } 
  }
+
+var obj = new Car("XXSY1");
+
+console.log("Reading attribute value Engine as :  " + obj.engine);
+
+obj.disp();
