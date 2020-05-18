@@ -36,8 +36,29 @@ var Circle = /** @class */ (function (_super) {
     };
     return Circle;
 }(Shape));
+var PrinterClass = /** @class */ (function () {
+    function PrinterClass() {
+    }
+    PrinterClass.prototype.doPrint = function () {
+        console.log("doPrint() from Parent called…");
+    };
+    return PrinterClass;
+}());
+var StringPrinter = /** @class */ (function (_super) {
+    __extends(StringPrinter, _super);
+    function StringPrinter() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    StringPrinter.prototype.doPrint = function () {
+        _super.prototype.doPrint.call(this);
+        console.log("doPrint() is printing a string…");
+    };
+    return StringPrinter;
+}(PrinterClass));
 var carObj = new Car("XXSY1");
 console.log("Reading attribute value Engine as :  " + carObj.engine);
 carObj.disp();
 var circleObj = new Circle(223);
 circleObj.disp();
+var stringPrinterObj = new StringPrinter();
+stringPrinterObj.doPrint();
