@@ -11,8 +11,25 @@ class Car {
     } 
  }
 
-var obj = new Car("XXSY1");
+ class Shape { 
+    Area:number 
+    
+    constructor(a:number) { 
+       this.Area = a 
+    } 
+ } 
+ 
+ class Circle extends Shape { 
+    disp():void { 
+       console.log("Area of the circle:  "+this.Area) 
+    } 
+ }
 
-console.log("Reading attribute value Engine as :  " + obj.engine);
+var carObj = new Car("XXSY1");
 
-obj.disp();
+console.log("Reading attribute value Engine as :  " + carObj.engine);
+
+carObj.disp();
+
+var circleObj = new Circle(223); 
+circleObj.disp()
