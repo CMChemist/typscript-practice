@@ -8,3 +8,8 @@ person.sayHello = function () {
     console.log("Hello. My name is " + person.firstname);
 };
 person.sayHello();
+var invokeperson = function (obj) {
+    console.log("First name: " + obj.firstname);
+    console.log("Last name:" + obj.lastname);
+};
+invokeperson(person);
