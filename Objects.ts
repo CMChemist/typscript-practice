@@ -16,3 +16,4 @@ var invokeperson = function(obj: {firstname:string, lastname:string}) {
 }
 
 invokeperson(person);
+invokeperson({firstname: "Will", lastname: "Smith"});

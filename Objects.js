@@ -10,6 +10,7 @@ person.sayHello = function () {
 person.sayHello();
 var invokeperson = function (obj) {
     console.log("First name: " + obj.firstname);
-    console.log("Last name:" + obj.lastname);
+    console.log("Last name: " + obj.lastname);
 };
 invokeperson(person);
+invokeperson({ firstname: "Will", lastname: "Smith" });
