@@ -14,3 +14,9 @@ var invokeperson = function (obj) {
 };
 invokeperson(person);
 invokeperson({ firstname: "Will", lastname: "Smith" });
+var addPoints = function (p1, p2) {
+    var x = p1.x + p2.x;
+    var y = p1.y + p2.y;
+    return { x: x, y: y };
+};
+console.log(addPoints({ x: 5, y: 2 }, { x: 2, y: 2 }));
